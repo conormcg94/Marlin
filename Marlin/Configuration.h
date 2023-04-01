@@ -682,9 +682,9 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #elif ENABLED(ENDER5_USE_MICROSWISS)
-    #define DEFAULT_Kp  46.45
-    #define DEFAULT_Ki   5.86
-    #define DEFAULT_Kd  91.97
+    #define DEFAULT_Kp  36.71
+    #define DEFAULT_Ki   2.62
+    #define DEFAULT_Kd  128.48
   #else
     #define DEFAULT_Kp  21.73
     #define DEFAULT_Ki   1.54
@@ -1246,7 +1246,7 @@
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
 #if ENABLED(ENDER5_USE_MICROSWISS)
-  #define DEFAULT_AXIS_STEPS_PER_UNIT { 80, 80, 800, 137.6 }
+  #define DEFAULT_AXIS_STEPS_PER_UNIT { 80, 80, 800, 146.87 }
 #else
   #define DEFAULT_AXIS_STEPS_PER_UNIT { 80, 80, 800, 93 }
 #endif
@@ -1361,7 +1361,7 @@
  * The probe replaces the Z-MIN endstop and is used for Z homing.
  * (Automatically enables USE_PROBE_FOR_Z_HOMING.)
  */
-#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+// #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 // Force the use of the probe for Z-axis homing
 #define USE_PROBE_FOR_Z_HOMING
@@ -1575,7 +1575,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { +43, -8.1, -1.45 }
+#define NOZZLE_TO_PROBE_OFFSET { +43, -8.1, -1.3 }
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
